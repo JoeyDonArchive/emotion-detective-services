@@ -8,7 +8,7 @@ Provided via emails/calls.
 
 ## High Level Architecture
 
-![Design](https://raw.github.com/JoeyDon/emotion-detective-services/master/designs/architect.jpg)
+![Design](https://raw.github.com/JoeyDonArchive/emotion-detective-services/master/designs/architect.jpg)
 
 ## Project setup
 
