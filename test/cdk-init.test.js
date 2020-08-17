@@ -1,0 +1,4 @@
+"use strict";
+test('Empty Stack', () => {
+});
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY2RrLWluaXQudGVzdC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbImNkay1pbml0LnRlc3QudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUNBLElBQUksQ0FBQyxhQUFhLEVBQUUsR0FBRyxFQUFFO0FBQ3pCLENBQUMsQ0FBQyxDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiXG50ZXN0KCdFbXB0eSBTdGFjaycsICgpID0+IHtcbn0pO1xuIl19

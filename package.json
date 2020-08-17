@@ -1,0 +1,42 @@
+{
+  "name": "cdk-init",
+  "version": "0.1.0",
+  "bin": {
+    "cdk-init": "bin/cdk-init.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "cdk": "cdk",
+    "bootstrap": "source .env.staging && yarn run build && cdk bootstrap --profile $PROFILE -c stage=$STAGE -c region=$REGION",
+    "deploy:staging:video-storage": "source .env.staging && yarn run build && cdk deploy $STAGE-emotion-detective-video-storage --profile $PROFILE -c stage=$STAGE -c region=$REGION",
+    "deploy:staging:stepfunction": "source .env.staging && yarn run build && cdk deploy $STAGE-emotion-detective-stepfunction --profile $PROFILE -c stage=$STAGE -c region=$REGION",
+    "deploy:staging:eventbridge": "source .env.staging && yarn run build && cdk deploy $STAGE-emotion-detective-eventbridge --profile $PROFILE -c stage=$STAGE -c region=$REGION",
+    "deploy:staging:site-resources": "source .env.staging && yarn run build && cdk deploy $STAGE-emotion-detective-site-resources --profile $PROFILE -c stage=$STAGE -c region=$SITEREGION",
+    "deploy:staging:api": "source .env.staging && yarn run build && cdk deploy $STAGE-emotion-detective-api --profile $PROFILE -c stage=$STAGE -c region=$REGION",
+    "deploy:staging:layer": "source .env.staging && yarn run build && cdk deploy $STAGE-emotion-detective-layer --profile $PROFILE -c stage=$STAGE -c region=$REGION"
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "1.27.0",
+    "@aws-cdk/aws-lambda": "1.27.0",
+    "@aws-cdk/aws-lambda-event-sources": "1.27.0",
+    "@aws-cdk/aws-stepfunctions": "1.27.0",
+    "@aws-cdk/aws-stepfunctions-tasks": "1.27.0",
+    "@aws-cdk/aws-events-targets": "1.27.0",
+    "@aws-cdk/aws-wafv2": "1.27.0",
+    "@aws-cdk/aws-cognito": "1.27.0",
+    "@types/jest": "^25.2.1",
+    "@types/node": "10.17.5",
+    "jest": "^25.5.0",
+    "ts-jest": "^25.3.1",
+    "aws-cdk": "1.27.0",
+    "@aws-cdk/aws-s3": "1.27.0",
+    "ts-node": "^8.1.0",
+    "typescript": "~3.7.2"
+  },
+  "dependencies": {
+    "@aws-cdk/core": "1.27.0",
+    "source-map-support": "^0.5.16"
+  }
+}
