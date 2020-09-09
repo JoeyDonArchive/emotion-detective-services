@@ -1,6 +1,6 @@
 # Emotion-detective-Services
 
-This is a solution regarding **KPMG Technical Test**
+This is a prototype.
 
 ## AWS Console Credentials
 
